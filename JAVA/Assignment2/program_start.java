@@ -1,6 +1,8 @@
 class employee {
+  int pf,tax,baseSalaryOfManager;
+  int baseSalaryOfLabour;
 
-
+//overriding method
     public void display_salary()
     {
       System.out.println("SALARY INFORMATION");
@@ -11,7 +13,7 @@ class employee {
 
 class manager extends employee {
 
-    int pf,tax,incentive,baseSalaryOfManager;
+    int incentive;
           manager( int baseSalaryOfManager, int pf, int tax,int incentive) {
           this.baseSalaryOfManager=baseSalaryOfManager;
           this.pf=pf;
@@ -22,15 +24,15 @@ class manager extends employee {
 
 
     public void display_salary() {
-      int netSalary=baseSalaryOfManager-(pf+tax)+ incentive;
 
+        int netSalary=baseSalaryOfManager-(pf+tax)+ incentive;
         System.out.println("NetSalary of this Manager is:"+netSalary+"rs");
     }
 }
 
  class labour extends employee {
-      int baseSalaryOfLabour,pf,tax,overtime;
-      labour(int pf,int tax,int overtime,int baseSalaryOfLabour) {
+      int overtime;
+      labour(int baseSalaryOfLabour,int pf,int tax,int overtime) {
       this.baseSalaryOfLabour=baseSalaryOfLabour;
       this.pf=pf;
       this.tax=tax;
@@ -39,8 +41,8 @@ class manager extends employee {
 
 
     public void display_salary() {
-      int netSalary=baseSalaryOfLabour-(pf+tax)+ overtime;
 
+        int netSalary=baseSalaryOfLabour-(pf+tax)+ overtime;
         System.out.println("NetSalary of this Labour is: "+netSalary+"rs");
     }
 }
