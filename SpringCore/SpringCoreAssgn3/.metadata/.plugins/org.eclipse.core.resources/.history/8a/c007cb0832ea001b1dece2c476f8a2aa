@@ -1,0 +1,10 @@
+package com.springcore.assignment3.BankingApplication;
+
+
+class BankingApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

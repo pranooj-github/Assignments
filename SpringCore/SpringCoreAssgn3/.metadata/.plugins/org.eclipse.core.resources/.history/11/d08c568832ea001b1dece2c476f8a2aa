@@ -1,0 +1,5 @@
+package com.springcore.assignment3.BankingApplication;
+
+public class BankAccount {
+
+}

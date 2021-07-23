@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  
+
+  <bean id="account" class="com.springcore.assignment3.BankingApplication.BankAccount" name="account">
+  
+  <constructor-arg name="account_Id" value="101"></constructor-arg> 
+  <constructor-arg name="account_holder" value="Pranooj"/>
+  <constructor-arg name="account_type" value="current"/>
+  <constructor-arg name="account_Balance" value="10000000"/>
+  
+    <!-- collaborators and configuration for this bean go here -->
+  </bean>
+  <bean id="address" class="com.springcore.assignment.springassignments.Address">
+  <property name="street" value="pattiam"></property>
+  <property name="city" value="thalassery"></property>
+  <property name="state" value="Kerala"></property>
+  <property name="country" value="India"></property>
+  <property name="zip" value="670691"></property>
+  
+    <!-- collaborators and configuration for this bean go here -->
+  </bean>
+
+  <!-- more bean definitions go here -->
+
+</beans>

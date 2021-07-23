@@ -1,0 +1,17 @@
+package com.springcore.assignment3.BankingApplication;
+
+public class BankAccountRepositoryImpl implements BankAccountRepository{
+
+	@Override
+	public double getBalance(long accound_Id) {
+		
+		return 0;
+	}
+
+	@Override
+	public double updateBalance(long account_Id, double newBalance) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

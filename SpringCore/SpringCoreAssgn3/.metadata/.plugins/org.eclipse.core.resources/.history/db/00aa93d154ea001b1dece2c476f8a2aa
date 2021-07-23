@@ -1,0 +1,16 @@
+package com.springcore.assignment3.BankingApplication;
+
+public class BankAccount {
+	long account_Id;
+	String account_holder,account_type;
+	double account_Balance;
+	public BankAccount(long account_Id, String account_holder, String account_type, double account_Balance) {
+		super();
+		this.account_Id = account_Id;
+		this.account_holder = account_holder;
+		this.account_type = account_type;
+		this.account_Balance = account_Balance;
+	}
+	
+	
+}

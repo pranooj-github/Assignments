@@ -1,0 +1,5 @@
+package com.userRegandLog.login;
+
+public class UserLoginDetails {
+
+}

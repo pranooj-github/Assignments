@@ -1,0 +1,31 @@
+package com.userRegandLog.login;
+
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.userRegandLog.userreg.UserModel;
+@Controller
+public class UserLoginController {
+	UserModel reguser;
+	
+	@RequestMapping(value="/login", method=RequestMethod.GET)
+	public String showLoginPage()
+	{
+		return "login";
+	}
+	
+	@RequestMapping(value="/login", method=RequestMethod.POST)
+	public String UserValidate(@ModelAttribute UserLoginDetails user,ModelMap model)
+	{
+		model.put("user", user);
+		if(user.getUsername().equals(reguser.getUsername())&& user.getPassword().equals(reguser.getPassword()))
+		{
+			return "success";
+		}
+		return "error";
+	}
+}

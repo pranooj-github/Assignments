@@ -1,0 +1,19 @@
+package com.springcore.assignment3.BankingApplication;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+@SpringBootApplication
+public class BankingApplication {
+
+	public static void main(String[] args) {
+		try(ClassPathXmlApplicationContext applicationContext=new ClassPathXmlApplicationContext(
+				"applicationContext.xml")){
+			BankAccountController controller= applicationContext.getBean(BankAccountController.class);
+			
+			
+		}
+	}
+
+}

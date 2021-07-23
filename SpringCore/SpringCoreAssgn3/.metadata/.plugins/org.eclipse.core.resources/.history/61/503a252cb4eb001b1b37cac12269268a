@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  
+
+  <bean id="account" class="com.springcore.assignment3.BankingApplication.BankAccount" name="account">
+  
+  <constructor-arg name="account_Id" value="101"></constructor-arg> 
+  <constructor-arg name="account_holder" value="Keerthi"/>
+  <constructor-arg name="account_type" value="current"/>
+  <constructor-arg name="account_Balance" value="10000000"/>
+  
+    <!-- collaborators and configuration for this bean go here -->
+    
+    
+  </bean>
+  
+  <bean  class="com.springcore.assignment3.BankingApplication.BankAccountRepositoryImpl" name="repo" autowire="byType">
+  
+  </bean>
+  
+  <bean  class="com.springcore.assignment3.BankingApplication.BankAccountServiceImpl" name="service" autowire="byName">
+    
+  </bean>
+    <bean  class="com.springcore.assignment3.BankingApplication.BankAccountController" name="controller" autowire="constructor">
+    
+  </bean>
+  
+
+  <!-- more bean definitions go here -->
+
+</beans>
