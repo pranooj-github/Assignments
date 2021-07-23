@@ -1,0 +1,32 @@
+package com.springcore.assignment5.assignment5;
+
+public class IceCream {
+private String flavour;
+private int price;
+public String getFlavour() {
+	return flavour;
+}
+public void setFlavour(String flavour) {
+	this.flavour = flavour;
+}
+public int getPrice() {
+	return price;
+}
+public void setPrice(int price) {
+	this.price = price;
+}
+public IceCream() {
+	super();
+}
+public void start()
+{
+	System.out.println("staring");
+}
+public void end()
+{
+	System.out.println("ending");
+}
+
+
+
+}

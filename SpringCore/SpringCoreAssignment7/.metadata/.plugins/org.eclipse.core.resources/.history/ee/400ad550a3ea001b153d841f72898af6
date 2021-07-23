@@ -1,0 +1,18 @@
+package com.springcore.assignment7.assignment7;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ExpressionDemo {
+	@Value("#{42+21}")
+	private int x;
+	@Value("#{40/10}")
+	private int y;
+	@Value("#{ T(java.lang.Math).PI}")
+	private double z;
+	@Value("#{ T(java.lang.Math).sqrt(121) }")
+	private int a;
+	@Value("#{ new java.lang.String('Pineapple')}")
+	private String fruit;
+}

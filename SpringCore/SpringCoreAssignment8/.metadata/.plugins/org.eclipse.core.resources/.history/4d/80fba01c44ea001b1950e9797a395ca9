@@ -1,0 +1,11 @@
+package com.springcore.assignment5.assignment5;
+
+
+
+public class Assignment5Application {
+
+	public static void main(String[] args) {
+		;
+	}
+
+}
