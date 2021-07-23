@@ -1,0 +1,25 @@
+package com.springcore.assignment.springassignments;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+public class Customer {
+int customer_id;
+String customerName,customerAddress;
+int customerContact;
+
+
+Address address;
+
+
+public Customer(int customer_id, String customerName, String customerAddress, int customerContact, Address address) {
+	super();
+	this.customer_id = customer_id;
+	this.customerName = customerName;
+	this.customerAddress = customerAddress;
+	this.customerContact = customerContact;
+	this.address = address;
+}
+
+
+}

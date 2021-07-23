@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean id="address" class="com.springcore.assignment.springassignments.Address">
+  <property name="street" value="pattiam"></property>
+  <property name="city" value="thalassery"></property>
+  <property name="state" value="Kerala"></property>
+  <property name="country" value="India"></property>
+  <property name="zip" value="670691"></property>
+  
+    <!-- collaborators and configuration for this bean go here -->
+  </bean>
+
+  <bean id="customer" class="com.springcore.assignment.springassignments.Customer">
+  
+  <constructor-arg name="customer_id" value="6"></constructor-arg> 
+  <constructor-arg name="customerName" value="Pranooj"/>
+  <constructor-arg name="customerAddress" value="Pranujas"/>
+  <constructor-arg name="customerContact" value="9745740799"/>
+  <constructor-arg name="address" ref="address"/>
+    <!-- collaborators and configuration for this bean go here -->
+  </bean>
+
+  <!-- more bean definitions go here -->
+
+</beans>

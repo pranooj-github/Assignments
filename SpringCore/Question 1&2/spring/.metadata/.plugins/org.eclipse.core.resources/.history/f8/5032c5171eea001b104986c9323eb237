@@ -1,0 +1,8 @@
+package com.springcore.assignment.springassignments.second;
+
+import java.util.Set;
+
+public class Question {
+ private Set<String> answers;
+ 
+}

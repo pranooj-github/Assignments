@@ -1,0 +1,16 @@
+package com.springcore.assignment.springassignments;
+
+import static org.junit.Assert.*;
+@RunWith(SpringRunner.class)
+@ContextConfiguration(locations="/applicationContext.xml")
+
+import org.junit.Test;
+
+public class CustomerTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.springcore.assignment.springassignments.second;
+
+import java.util.Set;
+
+public class SetAnswers {
+	public Set<String> setanswers()
+	{
+		return Set.of("mango","JackFruit");
+		}
+
+}

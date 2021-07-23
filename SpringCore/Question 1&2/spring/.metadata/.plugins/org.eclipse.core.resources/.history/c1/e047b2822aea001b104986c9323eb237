@@ -1,0 +1,14 @@
+package com.springcore.assignment.springassignments;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class Question {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

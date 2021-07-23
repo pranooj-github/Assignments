@@ -1,0 +1,25 @@
+package com.springcore.assignment.springassignments;
+
+
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
+
+//import org.junit.jupiter.api.Test;
+//import org.springframework.boot.test.context.SpringBootTest;
+
+@RunWith(SpringRunner.class)
+@ContextConfiguration(locations="/applicationContext.xml")
+class SpringAssignmentsApplicationTests {
+	Customer customer;
+	@Test
+	void testDisplay() {
+		assertArrayEquals(null, null);
+	}
+
+}

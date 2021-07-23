@@ -1,0 +1,8 @@
+package com.springcore.assignment.springassignments;
+@Component
+public class Customer {
+int customer_id;
+String customerName,customerAddress;
+int customerContact;
+Address address;
+}
