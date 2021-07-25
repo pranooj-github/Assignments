@@ -1,0 +1,5 @@
+package webapp.springmvc;
+
+public class HelloWorldController {
+
+}

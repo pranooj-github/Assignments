@@ -1,0 +1,52 @@
+package com.login.mvc;
+
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
+public class UserModel {
+	
+	
+	
+	@Size(min= 8,max=20,message="user name should be between 3-12 characters !!")
+	private String username;
+	
+	@Pattern(regexp="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,10}$",message="Enter valide password")
+	private String password;
+	@Pattern(regexp="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$",message="Invalid Email")
+	private String email;
+	
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	@Override
+	public String toString() {
+		return "UserModel [username=" + username + ", password=" + password + ", email=" + email + "]";
+	}
+	
+	
+	
+
+}
